@@ -1,0 +1,45 @@
+﻿
+
+
+@mixin prm-font-face-mixin-1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+/* Primary font-face */
+
+@font-face {
+    @include prm-font-face-mixin-1;
+    src: url('../Files/Fonts/Roboto/Roboto-Thin.ttf');
+    font-weight: 100;
+}
+@font-face {
+    @include prm-font-face-mixin-1;
+    src: url('../Files/Fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    @include prm-font-face-mixin-1;
+    src: url('../Files/Fonts/Roboto/Roboto-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    @include prm-font-face-mixin-1;
+    src: url('../Files/Fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: 700;
+}
+
+body {
+    @include prm-font-face-mixin-1;
+}
+
+
+
+a {
+    text-decoration: none;
+}

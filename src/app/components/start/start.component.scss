@@ -1,0 +1,30 @@
+#comp-screen-01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+
+    > .c-container-01 {
+        margin-bottom: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 250px;
+        }
+    }
+
+    > .c-container-02 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 48px;
+        color: #000;
+    }
+
+    &.off {
+        display: none;
+    }
+}
